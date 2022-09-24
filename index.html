@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="bg-color" class="bg-container">
+      <h1>Calculator</h1>
+      <div class="number_pad">
+        <input
+          type="text"
+          class="in"
+          placeholder="0"
+          name="display"
+          id="display"
+        />
+        <div>
+          <input type="button" value="7" class="numbers" onclick="displ('7')" />
+          <input type="button" value="8" class="numbers" onclick="displ('8')" />
+          <input type="button" value="9" class="numbers" onclick="displ('9')" />
+          <input type="button" value="DEL" class="numbers" onclick="dl()" />
+        </div>
+        <div>
+          <input type="button" value="4" class="numbers" onclick="displ('4')" />
+          <input type="button" value="5" class="numbers" onclick="displ('5')" />
+          <input type="button" value="6" class="numbers" onclick="displ('6')" />
+          <input type="button" value="+" class="numbers" onclick="displ('+')" />
+        </div>
+        <div>
+          <input type="button" value="1" class="numbers" onclick="displ('1')" />
+          <input type="button" value="2" class="numbers" onclick="displ('2')" />
+          <input type="button" value="3" class="numbers" onclick="displ('3')" />
+          <input type="button" value="-" class="numbers" onclick="displ('-')" />
+        </div>
+        <div>
+          <input type="button" value="." class="numbers" onclick="displ('.')" />
+          <input type="button" value="0" class="numbers" onclick="displ('0')" />
+          <input type="button" value="/" class="numbers" onclick="displ('/')" />
+          <input type="button" value="*" class="numbers" onclick="displ('*')" />
+        </div>
+        <div class="last_row">
+          <input
+            type="button"
+            value="RESET"
+            class="reset"
+            id="reset"
+            onclick="rst()"
+          />
+          <input type="button" value="=" class="equals_to" onclick="eql()" />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
